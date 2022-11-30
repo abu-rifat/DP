@@ -49,7 +49,6 @@ void sieve(ll ub){
 }
 
 ll go_babe(ll idx, ll n, ll k){
-	//cout<<primes[idx]<<" "<<n<<" "<<k<<endl;
 	if(n==0&&k==0)return 1;
 	if(idx>=psize||n<=0||k<=0||primes[idx]>n)return 0;
 	if(dp[n][idx][k]!=-1)return dp[n][idx][k];
@@ -63,7 +62,6 @@ int main(){
 	//cin>>t;
 	for(ll T=1;T<=t;T++){
 		sieve(1130);
-		//cout<<primes.size()<<endl;
 		ll n,k;
 		while(1){
 			cin>>n>>k;
