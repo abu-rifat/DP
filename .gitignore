@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+#CP Editor
+*.ans
+*.in
