@@ -2,13 +2,10 @@ using System;
 
 namespace UVA{
     class UVA_260{
-        static int n,t=0;
-        static int[] dx={-1,-1,0,0,1,1};
-        static int[] dy={-1,0,-1,1,0,1};
+        static int n,t=0,ct_w=0;
+        static int[] dx={-1,-1,0,0,1,1},dy={-1,0,-1,1,0,1},st_w=new int[210];
         static string[] board=new string[210];
         static bool[,] visited=new bool[210,210];
-        static int[] st_w=new int[210];
-        static int ct_w=0;
 
         static bool ck_win(int x, int y){
             visited[x,y]=true;
