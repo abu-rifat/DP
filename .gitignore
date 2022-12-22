@@ -34,3 +34,5 @@
 #CP Editor
 *.ans
 *.in
+*.txt
+.vscode
